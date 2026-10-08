@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f4f2" />
+    <meta
+      name="description"
+      content="Join Sritama and Soumik as they celebrate the beginning of their forever, 15 November 2026."
+    />
+    <title>Sritama &amp; Soumik — A Celebration of Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="ambience" aria-hidden="true"></canvas>
+    <div class="glow glow-blue" aria-hidden="true"></div>
+    <div class="glow glow-rose" aria-hidden="true"></div>
+    <audio
+      id="music"
+      src="assets/audio/bridgerton-strings.m4a"
+      type="audio/mp4"
+      preload="auto"
+    ></audio>
+    <button
+      class="music-toggle"
+      id="musicToggle"
+      aria-label="Play music"
+      aria-pressed="false"
+    >
+      <span class="music-icon">♫</span
+      ><span class="music-label">A LITTLE MUSIC</span
+      ><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <main>
+      <section class="hero section" id="top">
+        <div class="hero-inner">
+          <div class="eyebrow">
+            <span></span> WE ARE GETTING ENGAGED <span></span>
+          </div>
+          <p class="hero-pretitle">WITH FULL HEARTS &amp; JOYFUL EXPECTATION</p>
+          <h1>
+            <span>Sritama</span><span class="ampersand">&amp;</span
+            ><span>Soumik</span>
+          </h1>
+          <p class="hero-date">XV <span>·</span> XI <span>·</span> MMXXVI</p>
+          <div class="portrait-wrap">
+            <div class="portrait-arch">
+              <img
+                src="assets/images/hero-banner.png"
+                alt="Illustrated portrait of Sritama and Soumik dressed for their engagement"
+                data-fallback="portrait"
+              />
+            </div>
+            <span class="portrait-caption">A NEW CHAPTER BEGINS</span>
+          </div>
+          <p class="hero-quote">
+            “Two lives, one shared horizon. We found our forever in each other,
+            and we cannot wait to celebrate this beginning with you.”
+          </p>
+          <a class="button button-gold" href="#date"
+            >Discover the day <span>↓</span></a
+          >
+        </div>
+        <span class="side-note">A DAY TO TREASURE · CONTai, WEST BENGAL</span>
+      </section>
+
+      <section class="section date-section" id="date">
+        <div class="section-heading">
+          <p class="eyebrow">A MOMENT TO REMEMBER</p>
+          <h2>The day our forever begins</h2>
+          <p>Scratch away the gold and discover when to join us.</p>
+        </div>
+        <div class="scratch-card">
+          <div class="scratch-content">
+            <span class="small-caps">PLEASE SAVE THE DATE</span
+            ><strong>15<sup>th</sup> November 2026</strong
+            ><span class="scratch-rule"></span
+            ><span>Sunday · Ceremony begins at 11:30 AM</span>
+            <div class="countdown" aria-label="Countdown to event">
+              <div><b id="days">—</b><small>DAYS</small></div>
+              <div><b id="hours">—</b><small>HOURS</small></div>
+              <div><b id="minutes">—</b><small>MINUTES</small></div>
+              <div><b id="seconds">—</b><small>SECONDS</small></div>
+            </div>
+          </div>
+          <canvas
+            id="scratchCanvas"
+            aria-label="Scratch this golden panel to reveal the date"
+          ></canvas>
+          <div class="scratch-hint" id="scratchHint">
+            ✧ &nbsp; RUB GENTLY TO REVEAL &nbsp; ✧
+          </div>
+        </div>
+        <a
+          class="text-link"
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Sritama%20%26%20Soumik%20%E2%80%94%20Engagement&dates=20261115T100000/20261115T140000&details=Join%20us%20to%20celebrate%20our%20engagement&location=Green%20%26%20Glory%20Banquet%20Hall%2C%20Contai"
+          target="_blank"
+          rel="noopener"
+          >＋ &nbsp; Add to Google Calendar</a
+        >
+      </section>
+
+      <section class="section gallery-section" id="memories">
+        <div class="section-heading">
+          <p class="eyebrow">LITTLE MOMENTS, BIG LOVE</p>
+          <h2>Our gallery of moments</h2>
+          <p>A few pages from the story we’re writing together.</p>
+        </div>
+        <div class="collage" aria-label="A living collage of romantic memories">
+          <button
+            class="flip-tile tile-feature"
+            aria-label="Flip memory photograph 1"
+          >
+            <span class="flip-inner"
+              ><span class="tile-face tile-front"
+                ><img
+                  src="assets/images/gallery-1-hd.jpg"
+                  alt="Sritama and Soumik sharing a joyful moment" /></span
+              ><span class="tile-face tile-back"
+                ><img
+                  src="assets/images/gallery-2-hd.jpg"
+                  alt="Sritama and Soumik enjoying a festive evening" /></span
+            ></span>
+          </button>
+          <button
+            class="flip-tile tile-square tile-two"
+            aria-label="Flip memory photograph 2"
+          >
+            <span class="flip-inner"
+              ><span class="tile-face tile-front"
+                ><img
+                  src="assets/images/gallery-3-hd.jpg"
+                  alt="Sritama and Soumik together outdoors" /></span
+              ><span class="tile-face tile-back"
+                ><img
+                  src="assets/images/gallery-4-hd.jpg"
+                  alt="A happy portrait of Sritama and Soumik" /></span
+            ></span>
+          </button>
+          <button
+            class="flip-tile tile-square tile-three"
+            aria-label="Flip memory photograph 3"
+          >
+            <span class="flip-inner"
+              ><span class="tile-face tile-front"
+                ><img
+                  src="assets/images/gallery-5-hd.jpg"
+                  alt="Sritama and Soumik celebrating a graduation" /></span
+              ><span class="tile-face tile-back"
+                ><img
+                  src="assets/images/gallery-6-hd.jpg"
+                  alt="Sritama and Soumik on an evening out" /></span
+            ></span>
+          </button>
+          <button
+            class="flip-tile tile-four"
+            aria-label="Flip memory photograph 4"
+          >
+            <span class="flip-inner"
+              ><span class="tile-face tile-front"
+                ><img
+                  src="assets/images/gallery-7-hd.jpg"
+                  alt="Sritama and Soumik dressed for a celebration" /></span
+              ><span class="tile-face tile-back"
+                ><img
+                  src="assets/images/gallery-8-hd.jpg"
+                  alt="Sritama and Soumik smiling together in the evening" /></span
+            ></span>
+          </button>
+        </div>
+        <p class="gallery-note">TAP A PHOTOGRAPH TO TURN THE PAGE</p>
+      </section>
+
+      <section class="section story-section">
+        <div class="section-heading">
+          <p class="eyebrow">THE BEGINNING OF OUR STORY</p>
+          <h2>Every love has its own melody</h2>
+          <p>And ours is still unfolding.</p>
+        </div>
+        <div class="video-frame">
+          <video
+            id="storyVideo"
+            controls
+            playsinline
+            preload="metadata"
+            poster="assets/images/video-cover.png"
+          >
+            <source src="assets/video/our-story.mp4" type="video/mp4" />
+            Your browser does not support video playback.</video
+          ><button
+            class="video-play"
+            id="videoPlay"
+            aria-label="Play our story video"
+          >
+            <span>▶</span><small>OUR STORY</small>
+          </button>
+          <div class="video-caption">A LOVE LETTER IN MOTION</div>
+        </div>
+      </section>
+
+      <section class="section itinerary-section">
+        <div class="section-heading">
+          <p class="eyebrow">THE DAY, TOGETHER</p>
+          <h2>A little plan for a lovely day</h2>
+          <p>We’ll be so glad to share each moment with you.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-time">10:00 <small>AM</small></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-copy">
+              <h3>Arrive Early</h3>
+              <p>A warm welcome and morning refreshments.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-time">11:30 <small>AM</small></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-copy">
+              <h3>Witness Our Engagement <span>💍</span></h3>
+              <p>The sacred ring ceremony.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-time">01:00 <small>PM</small></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-copy">
+              <h3>Celebrate with Us at Lunch</h3>
+              <p>A grand celebratory feast.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section venue-section" id="venue">
+        <div class="section-heading">
+          <p class="eyebrow">WE’LL SAVE YOU A PLACE</p>
+          <h2>Meet us where the day unfolds</h2>
+        </div>
+        <div class="venue-card">
+          <div class="venue-copy">
+            <span class="venue-flower">❀</span>
+            <h3>Green &amp; Glory<br />Banquet Hall</h3>
+            <p id="address">
+              Dingalberia, Rasulpur Road, Contai (Kanthi), Purba Medinipur, West
+              Bengal – 721401
+            </p>
+            <div class="venue-actions">
+              <a
+                class="button button-gold"
+                href="https://www.google.com/maps/search/?api=1&query=Green+%26+Glory+Banquet+Hall%2C+Dingalberia%2C+Rasulpur+Road%2C+Contai%2C+West+Bengal+721401"
+                target="_blank"
+                rel="noopener"
+                >Open in Google Maps ↗</a
+              ><button class="button button-outline" id="copyAddress">
+                Copy address
+              </button>
+            </div>
+          </div>
+          <div class="map-wrap">
+            <iframe
+              title="Map showing Green & Glory Banquet Hall near Contai, West Bengal"
+              src="https://maps.google.com/maps?q=Green%20%26%20Glory%20Banquet%20Hall%2C%20Contai%2C%20West%20Bengal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ticket-section">
+        <div class="section-heading">
+          <p class="eyebrow">A LITTLE SOMETHING, MADE FOR YOU</p>
+          <h2>Your golden ticket</h2>
+          <p>Tell us your name. We’ll have your invitation ready.</p>
+        </div>
+        <form class="ticket-form" id="ticketForm">
+          <label for="guestName">YOUR NAME</label>
+          <div class="input-row">
+            <input
+              id="guestName"
+              name="guestName"
+              type="text"
+              placeholder="Type your name here"
+              maxlength="50"
+              autocomplete="name"
+              required
+            /><button class="button button-gold" type="submit">
+              Generate my invitation <span>✧</span>
+            </button>
+          </div>
+        </form>
+        <div class="ticket-result" id="ticketResult" hidden>
+          <div class="golden-ticket" id="goldenTicket">
+            <div class="ticket-inner">
+              <span class="ticket-topline"
+                >✧ &nbsp; WITH JOYFUL HEARTS &nbsp; ✧</span
+              ><span class="ticket-guest" id="ticketGuest">Friend</span>
+              <p>We would be delighted to celebrate with you.</p>
+              <span class="ticket-couple">Sritama <i>&amp;</i> Soumik</span
+              ><span class="ticket-date">SUNDAY · 15 NOVEMBER 2026</span
+              ><span class="ticket-place"
+                >Green &amp; Glory Banquet Hall · Contai</span
+              ><span class="ticket-bottomline"
+                >WE CAN’T WAIT TO CELEBRATE WITH YOU</span
+              >
+            </div>
+          </div>
+          <button class="button button-outline save-ticket" id="saveTicket">
+            ↓ &nbsp; Save card as image
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-rule"><span>✧</span></div>
+        <p class="footer-names">Sritama <i>&amp;</i> Soumik</p>
+        <p>
+          15 November 2026 <span>·</span> Green &amp; Glory Banquet Hall, Contai
+        </p>
+        <p class="footer-close">
+          With love, and a little sparkle — we hope to see you there.
+        </p>
+      </footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
